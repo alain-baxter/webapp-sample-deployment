@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webapp-sample
+  name: webapp-sample
+  namespace: webapp-sample-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp-sample
+  template:
+    metadata:
+      labels:
+        app: webapp-sample
+    spec:
+      containers:
+      - image: gcr.io/arctiq-mission-302500/webapp-sample@sha256:9d481ec2b6168579230f816016b3b09c91529120cf1497a2e163f164441b58c6
+        name: webapp-sample
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: webapp-sample
+  name: webapp-sample
+  namespace: webapp-sample-prod
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: webapp-sample
+  type: LoadBalancer

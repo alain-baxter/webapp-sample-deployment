@@ -7,3 +7,11 @@ envs:
   name: dev
   namespace: webapp-sample-dev
   project: arctiq-mission-302500
+- cluster_name: mission-cluster
+  compute:
+    zone: northamerica-northeast1-b
+  creation_time: "2021-01-24T21:43:35Z"
+  last_update_time: "2021-01-24T21:43:35Z"
+  name: staging
+  namespace: webapp-sample-staging
+  project: arctiq-mission-302500

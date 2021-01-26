@@ -1,4 +1,3 @@
 # Please don't change the namespace field
-namespace: webapp-sample-dev
 bases:
    - ../../base

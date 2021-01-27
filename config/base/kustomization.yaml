@@ -8,3 +8,5 @@ resources:
 images:
 - digest: sha256:0df2a8021e4e8f6603da2c42d8a54a0b8ab2eaae06625f4dd8a2cf7f5ea66d28
   name: gcr.io/arctiq-mission-302500/webapp-sample
+- name: gcr.io/arctiq-mission-302500/webapp-sample:sha256
+  newTag: 709ef5e787387d3c1e5a8f6fc2baa1775f642729a5486626f88832a3c9786b07

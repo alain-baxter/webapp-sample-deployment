@@ -6,5 +6,5 @@ resources:
 - service.yaml
 
 images:
-- digest: sha256:09eeafbdcc3f0704a8c4600e1aea6a3856acbc701bf26682e63c432e3ed4f0cb
+- digest: sha256:5d78675ac8def89aa32188135a03f9d916ef59894577a6c425733261bc5c9a53
   name: gcr.io/arctiq-mission-302500/webapp-sample
